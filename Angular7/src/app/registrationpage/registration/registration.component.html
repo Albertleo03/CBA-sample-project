@@ -1,0 +1,58 @@
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label>Domain</label>
+                <select name="Domainname" #Domainname="ngModel" [(ngModel)]="service.formData.Domainname"
+                class="form-control">
+                <option value="">Please Select</option>
+                <option value="AU">AU</option>
+                <option value="BU">BU</option>
+                <option value="CU">CU</option>
+                </select>
+            </div>
+            <div class="form-group" hidden>
+                    <label>id</label>
+                    <input name="id" #Domainname="ngModel" [(ngModel)]="service.formData.id"
+                    class="form-control">
+                </div>
+                <div class="form-group">
+                        <label>First Name</label>
+                        <input name="Firstname" required #Firstname="ngModel" [(ngModel)]="service.formData.Firstname"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                            <label>Email</label>
+                            <input name="Email" required #Email="ngModel" [(ngModel)]="service.formData.Email"
+                            class="form-control">
+                        </div>
+        </div>
+        <div class="col-md-6">
+                <div class="form-group">
+                        <label>My Team</label>
+                        <select name="Teamname" #Teamname="ngModel" [(ngModel)]="service.formData.Teamname"
+                        class="form-control">
+                        <option value="">Please Select</option>
+                        <option value="Chennai">Chennai</option>
+                        <option value="Mumbai">Mumbai</option>
+                        </select>
+                    </div>
+            
+            <div class="form-group">
+                <label>Last Name</label>
+                <input name="Lastname" #Lastname="ngModel" [(ngModel)]="service.formData.Lastname"
+                class="form-control">
+            </div>
+            <div class="form-group">
+                    <label>Lan Id</label>
+                    <input name="Lanid" #Lanid="ngModel" [(ngModel)]="service.formData.Lanid"
+                    class="form-control">
+                </div>
+        </div>
+    </div>
+    <div class="form-group">
+            <button type="submit" class="btn btn-dark">Submit</button>
+        </div>
+    
+</form>

@@ -1,0 +1,5 @@
+src
++---app
++------Registrationpage
+         --Registrationpage.component.ts|.html|.css
+       -----Registration.component.ts|.html|.css

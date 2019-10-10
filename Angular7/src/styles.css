@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+.jubmotron{
+    padding-top: 0px;
+    background: #fff;
+}
+
+table.table-hover tbody tr:hover{
+    cursor: pointer;
+}
+input.ng-dirty.ng-invalid{
+    border-color: #dc3545;
+}
