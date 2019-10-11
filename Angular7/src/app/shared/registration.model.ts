@@ -5,5 +5,5 @@ export class Registration {
       Firstname:string;  
       Lastname:string;  
       Email:string;  
-      Lanid:number; 
+      Lanid:string; 
 }

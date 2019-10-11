@@ -81,12 +81,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DBContext\Class1.cs" />
     <Compile Include="DBContext\EmloyeeDBcontext.cs" />
     <Compile Include="DBContext\Employee.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistrationViewModel.cs" />
     <Compile Include="Service.cs" />
   </ItemGroup>
   <ItemGroup>

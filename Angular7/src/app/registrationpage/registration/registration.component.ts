@@ -30,7 +30,7 @@ resetForm(form?:NgForm){
       Firstname:'',  
       Lastname:'', 
       Email:'',  
-      Lanid:41 
+      Lanid: ''
   };
   this.service.RegisteredDatas=[];
 }
