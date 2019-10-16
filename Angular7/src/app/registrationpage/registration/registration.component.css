@@ -1,0 +1,40 @@
+.jubmotron{
+    padding-top: 0px;
+    background: #fff;
+}
+
+.left-align {
+    display: -ms-flexbox;
+    margin-right: 66px;
+    margin-left: -190px;
+}
+
+
+.left-align-extra{
+    display: -ms-flexbox;
+    margin-right: 66px;
+    margin-left: -240px;
+}
+
+.right-align-extra{
+    display: -ms-flexbox;
+    margin-right: 66px;
+    margin-left: 0px;
+}
+
+input.ng-touched.ng-invalid{
+    border-color: #dc3545;
+}
+
+button[type="Submit"]{
+    background-color:gold;
+    color: black;
+
+}
+
+div.validation-error{
+    width: 100%;
+    margin-top: .25rem;
+    font-size: 80%;
+    color: #dc3545;
+}

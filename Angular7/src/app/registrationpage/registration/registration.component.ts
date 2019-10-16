@@ -1,21 +1,26 @@
 
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
-import { Registration } from 'src/app/shared/registration.model';
+//import { Registration } from 'src/app/shared/registration.model';
 import { RegitrationService } from 'src/app/shared/regitration.service';
 import { ToastrService } from 'ngx-toastr';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
-  styles: []
+  styleUrls: ['./registration.component.css'],
+  providers: [DatePipe]
 })
 export class RegistrationComponent implements OnInit {
-
+  myDate = new Date();
   constructor( private service:RegitrationService,
     private regitrationService:RegitrationService,
-    private toastr:ToastrService
-    ) { }
+    private toastr:ToastrService,
+    private datePipe: DatePipe
+    ) { 
+      this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
+    }
 
   ngOnInit() {
     this.resetForm();
@@ -59,4 +64,5 @@ updateRecord(form:NgForm){
   this.service.loadRegisteredList();
   });
 }
+
 }
