@@ -17,7 +17,7 @@ namespace WebApplication1.Controllers
             _service = service;
         }
 
-
+        [HttpGet]
         [Route("Employee")]
         public List<Employee> GetEmployees()
         {
@@ -26,6 +26,7 @@ namespace WebApplication1.Controllers
             return model;
         }
 
+        [HttpPost]
         [Route("Employee/add")]
         public IHttpActionResult PostEmloyee(Employee modeldata)
         {
@@ -45,6 +46,7 @@ namespace WebApplication1.Controllers
             }
         }
 
+        [HttpPut]
         [ResponseType(typeof(Employee))]
         public IHttpActionResult PutEmloyee(int id, Employee modeldata)
         {

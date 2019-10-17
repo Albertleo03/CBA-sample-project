@@ -16,7 +16,7 @@ export class RegistrationpageComponent implements OnInit {
   }
 
   EditData(data:Registration){
-    this.service.formData=data;
+    this.service.formData=Object.assign({},data);
   }
 
 }

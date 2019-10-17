@@ -9,18 +9,16 @@ import { DatePipe } from '@angular/common';
 @Component({
   selector: 'app-registration',
   templateUrl: './registration.component.html',
-  styleUrls: ['./registration.component.css'],
-  providers: [DatePipe]
+  styleUrls: ['./registration.component.css']
+
 })
 export class RegistrationComponent implements OnInit {
   myDate = new Date();
   constructor( private service:RegitrationService,
     private regitrationService:RegitrationService,
-    private toastr:ToastrService,
-    private datePipe: DatePipe
-    ) { 
-      this.myDate = this.datePipe.transform(this.myDate, 'yyyy-MM-dd');
-    }
+    private toastr:ToastrService
+    
+    ) {}
 
   ngOnInit() {
     this.resetForm();
